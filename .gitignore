@@ -1,0 +1,4 @@
+/target
+*.wav
+!assets/**/*.wav
+.DS_Store

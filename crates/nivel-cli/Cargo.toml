@@ -1,0 +1,25 @@
+[package]
+name = "nivel-cli"
+description = "Keep your microphone on the level: noise suppression, auto-leveling and dropout protection for any app, on Windows, macOS and Linux."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme = "../../README.md"
+
+[[bin]]
+name = "nivel"
+path = "src/main.rs"
+
+[dependencies]
+nivel-dsp.workspace = true
+nivel-core.workspace = true
+anyhow.workspace = true
+clap.workspace = true
+hound.workspace = true
+ctrlc.workspace = true

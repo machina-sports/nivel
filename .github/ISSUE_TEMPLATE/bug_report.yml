@@ -1,0 +1,34 @@
+name: Bug report
+description: Something sounds wrong, or Nivel misbehaves
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did you hear or see instead?
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: macOS 15.4, Windows 11 24H2, Ubuntu 24.04 with PipeWire…
+    validations:
+      required: true
+  - type: input
+    id: mic
+    attributes:
+      label: Microphone and audio interface
+      placeholder: Shure MV7 over USB, AirPods, laptop built-in mic…
+  - type: textarea
+    id: devices
+    attributes:
+      label: Output of `nivel --version` and `nivel devices`
+      render: text
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `nivel doctor`
+      description: It only prints levels; no audio is recorded.
+      render: text

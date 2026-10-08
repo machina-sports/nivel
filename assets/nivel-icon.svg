@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="t">
+  <title id="t">Nivel</title>
+  <rect width="512" height="512" rx="112" fill="#0F1B2D"/>
+  <rect x="56" y="186" width="400" height="140" rx="70" fill="#16304A" stroke="#5EEAD4" stroke-width="12"/>
+  <path d="M88 256 q14 -36 28 0 t28 0 t28 0 t28 0 t28 0 t28 0 t28 0 t28 0 t28 0 t28 0 t28 0 t28 0" fill="none" stroke="#5EEAD4" stroke-opacity="0.55" stroke-width="10" stroke-linecap="round"/>
+  <line x1="192" y1="150" x2="192" y2="362" stroke="#E2E8F0" stroke-width="12" stroke-linecap="round"/>
+  <line x1="320" y1="150" x2="320" y2="362" stroke="#E2E8F0" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="256" cy="256" r="42" fill="#5EEAD4" stroke="#0F1B2D" stroke-width="10"/>
+  <circle cx="243" cy="243" r="13" fill="#FFFFFF" fill-opacity="0.75"/>
+</svg>

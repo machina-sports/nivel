@@ -1,0 +1,41 @@
+[workspace]
+resolver = "3"
+members = ["crates/nivel-dsp", "crates/nivel-core", "crates/nivel-cli"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+license = "MIT OR Apache-2.0"
+authors = ["Machina Sports"]
+repository = "https://github.com/machina-sports/nivel"
+homepage = "https://github.com/machina-sports/nivel"
+keywords = ["audio", "microphone", "noise-suppression", "agc", "voice"]
+categories = ["multimedia::audio", "command-line-utilities"]
+
+[workspace.dependencies]
+nivel-dsp = { path = "crates/nivel-dsp", version = "0.1.0" }
+nivel-core = { path = "crates/nivel-core", version = "0.1.0" }
+nnnoiseless = { version = "0.5.2", default-features = false }
+cpal = "0.18.2"
+rubato = "5.0.1"
+audioadapter-buffers = "5.2"
+rtrb = "0.4.0"
+anyhow = "1.0"
+clap = { version = "4.6", features = ["derive"] }
+hound = "3.5"
+ctrlc = "3.5"
+windows = "0.62"
+
+# The DSP is unusably slow without optimizations, even in tests and debug runs.
+[profile.dev.package.nnnoiseless]
+opt-level = 3
+[profile.dev.package.rubato]
+opt-level = 3
+[profile.dev.package.nivel-dsp]
+opt-level = 3
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true

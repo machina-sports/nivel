@@ -1,0 +1,37 @@
+[package]
+name = "nivel-core"
+description = "Audio engine for Nivel: device I/O, virtual microphone, OS input volume control and supervision."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[dependencies]
+nivel-dsp.workspace = true
+cpal.workspace = true
+rubato.workspace = true
+audioadapter-buffers.workspace = true
+rtrb.workspace = true
+anyhow.workspace = true
+
+[target.'cfg(target_os = "linux")'.dependencies]
+# Native PulseAudio host (also served by pipewire-pulse): lets Nivel address
+# sinks and sources by name, which the virtual microphone relies on.
+cpal = { workspace = true, features = ["pulseaudio"] }
+
+[target.'cfg(windows)'.dependencies]
+windows = { workspace = true, features = [
+    "Win32_Foundation",
+    "Win32_Devices_Properties",
+    "Win32_Media_Audio",
+    "Win32_Media_Audio_Endpoints",
+    "Win32_System_Com",
+    "Win32_System_Com_StructuredStorage",
+    "Win32_System_Variant",
+    "Win32_UI_Shell_PropertiesSystem",
+] }
