@@ -12,7 +12,7 @@
 <p align="center">
   <a href="https://github.com/machina-sports/nivel/actions/workflows/ci.yml"><img src="https://github.com/machina-sports/nivel/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <img src="https://img.shields.io/badge/platforms-Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-0F1B2D" alt="Platforms: Windows, macOS, Linux">
-  <img src="https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-5EEAD4" alt="License: MIT or Apache-2.0">
+  <img src="https://img.shields.io/badge/license-MIT-5EEAD4" alt="License: MIT">
 </p>
 
 <p align="center"><a href="README.pt-BR.md">Leia em português</a></p>
@@ -139,9 +139,13 @@ More detail in [docs/how-it-works.md](docs/how-it-works.md).
 
 Ideas and pull requests are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Questions and contact
+
+Open an [issue](https://github.com/machina-sports/nivel/issues) for bugs and ideas, or write to Mateus Pinheiro at [mateus.pinheiro@machina.gg](mailto:mateus.pinheiro@machina.gg) for anything else.
+
 ## License
 
-Dual-licensed under [MIT](LICENSE-MIT) or [Apache 2.0](LICENSE-APACHE), at your option.
+[MIT](LICENSE). Free to use, change and share, including commercially.
 
 Noise suppression uses [nnnoiseless](https://github.com/jneem/nnnoiseless), a Rust port of [RNNoise](https://github.com/xiph/rnnoise) by Jean-Marc Valin (BSD-3-Clause). Audio I/O uses [cpal](https://github.com/RustAudio/cpal) and resampling uses [rubato](https://github.com/HEnquist/rubato).
 

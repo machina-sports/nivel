@@ -46,6 +46,14 @@ Tudo roda localmente: nenhum áudio, telemetria ou analytics sai do seu computad
 
 Instalação, comandos, ajustes finos e arquitetura estão no [README em inglês](README.md).
 
+## Dúvidas e contato
+
+Abra uma [issue](https://github.com/machina-sports/nivel/issues) para bugs e ideias, ou escreva para Mateus Pinheiro em [mateus.pinheiro@machina.gg](mailto:mateus.pinheiro@machina.gg).
+
+## Licença
+
+[MIT](LICENSE): livre para usar, modificar e compartilhar, inclusive comercialmente.
+
 ---
 
 <p align="center">Feito com carinho pela <a href="https://github.com/machina-sports">Machina Sports</a>, para todo mundo que já perguntou "tá me ouvindo?"</p>

@@ -51,7 +51,7 @@ jobs:
         run: |
           name="nivel-${GITHUB_REF_NAME}-${{ matrix.target }}"
           mkdir "$name"
-          cp README.md LICENSE-MIT LICENSE-APACHE "$name/"
+          cp README.md LICENSE "$name/"
           if [[ "${{ runner.os }}" == "Windows" ]]; then
             cp "target/${{ matrix.target }}/release/nivel.exe" "$name/"
             7z a "$name.zip" "$name" > /dev/null

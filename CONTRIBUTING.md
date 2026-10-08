@@ -44,4 +44,10 @@ Code that runs inside an audio callback (`engine.rs`: `open_input`, `open_output
 
 - Keep each PR focused on one change, and describe how you tested it (which OS, which mic).
 - CI runs formatting, clippy and tests on Linux, macOS and Windows; please make sure they pass.
-- By contributing, you agree that your work is dual-licensed under MIT or Apache 2.0, like the rest of the project.
+- By contributing, you agree that your work is released under the [MIT License](LICENSE), like the rest of the project.
+
+## Questions
+
+Ask in an [issue](https://github.com/machina-sports/nivel/issues), or write to Mateus Pinheiro at [mateus.pinheiro@machina.gg](mailto:mateus.pinheiro@machina.gg).
+
+Everyone taking part is expected to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
